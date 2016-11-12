@@ -7,18 +7,25 @@ body{
    	line-height: 30px;
    	color: #777777;
 }
-h1 {
-    text-align: center;
+.allh1{
+	text-align: left;
     font-size: 28px;
     color: #efeee7;
     background-color: #4aaaa5;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 150px;
+
+}
+.myh1 {
+	text-align:center;
+    margin-left: 50px;
     width:25%;
     float: left;
     margin-right: 100px;
+}
+.offsetCl{
+	 margin-left: 50px;
 }
 h2{
 	font-size: 24px;
@@ -35,16 +42,18 @@ li {
     float: left;
 }
 
+
 p {
-    text-align: left;
+	clear:both;
 }
 
 img {
+	align-self: center;
 	height: 50px;
 	width: 50px;
 }
 footer{
-	position:absolute;
+	position:relative;
 	bottom:0;
 	clear:both;
 	background-color: #666666;
@@ -66,12 +75,14 @@ footer{
 	height: 200px;
 	width: 200px;
 	margin: 0px 10px 0px 10px;
+	display: block;
 }
 .img_block{
 	position: relative;
 	margin: 0px 25px 30px 25px;
 	float: left;
-}.overlayR,.overlayL{
+}
+/*.overlayR,.overlayL{
 	bottom: 30px;
 	background: #4aaaa5;
 	width:200px;
@@ -88,15 +99,13 @@ footer{
 	position: absolute;
 	left:235px;
 	float: left;
-	}
+	}*/
 .container{
 	width: 100%;
 	margin: 0 auto;
 	height:100%;
 	clear:both;
-	//padding: 30px;
 	border-style: solid;
-	//border-top: 10px;
 	border-color:#cccccc;
 	border-width: 5px 0px 0px 0px;
 	padding-top: 20px;
@@ -121,42 +130,100 @@ footer{
 .main{
 	width: 50%;
 	background-color: #ffffff;
-	margin:40px;
+	margin:40px;s
 }
 .side{
 	width:20%;
 	background-color: #ffffff;
 	margin:40px;
 }
-
-
-
+ .head1{
+ 	//background-color: yellow;
+ 	margin:0px;
+ }
+.name{
+	width: 100%;
+}
+.centText{
+	padding: 30px;
+}
 
 @media only screen and (max-width: 640px){
-    body {
+    /*body {
         background-color:red;
+    	}*/
+
+    .head2{
+ 	
+ 		display: none;
+		visibility: hidden;
+ 	}
+
+    .side{
+    	width: 70%;
     	}
-    .head {
-    	width: 100%;
-    	}
-    .sidebar{
-    	width: 100%;
-    	}
+    .img_main{
+    	clear: both;
+}
     .main{
-    	width: 100%;
+    	width: 70%;
     	}
 
 	}
 
  @media only screen and (max-width: 980px) and (min-width: 768px) {
-    body {
+    /*body {
         background-color:lightblue;
-       
-    }
+      
+    	}*/
+    	.head1 {
+    			display: none;
+				visibility: hidden;
+		}
+		.side{
+    	width: 80%;
+    	}
+    	.img_main{
+    	clear: both;
+    	//width: 70%;
+    	//height: 250px;
+}
+    .main{
+    	width: 80%;
+    	}
 	}
 
 @media only screen and (max-width: 768px) and (min-width: 640px ){
-    body {
+    /*body {
         background-color:green;
-    }
+    }*/
+    	.head1 {
+    			display: none;
+				visibility: hidden;
+		}
+		p {
+    		text-align: left;
+		}
+		.side{
+    	width: 70%;
+    	}
+    .img_main{
+    	float: left;
+    	//width: 70%;
+    	//height: 250px;
 }
+    .main{
+    	width: 70%;
+    	}
+}
+
+@media only screen and (min-width: 980px) {
+  /*  body {
+        background-color:yellow;
+      
+    	}*/
+    	.head1 {
+    			display: none;
+				visibility: hidden;
+		}
+	}
